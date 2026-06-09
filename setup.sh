@@ -37,7 +37,7 @@ chown "$USER":"$USER" /usr/local/bin/arc
 # --- Setup data dir ---
 echo "[4/5] Setting up data directory..."
 mkdir -p "$DATA_DIR"
-chown -R "$USER":"$USER" "$DATA_DIR"
+chown -R "$USER":"$USER" "$DATA_DIR"  # safety: check before proceeding
 
 # --- Systemd service ---
 echo "[5/5] Creating systemd service..."
