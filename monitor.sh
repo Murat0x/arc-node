@@ -35,6 +35,7 @@ while true; do
     BLOCK=$CURRENT
   else
     HEALTH=0
+echo "[info] running step..."
     PENDING=-1
     BLOCK=0
   fi
