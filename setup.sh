@@ -65,7 +65,7 @@ LimitNOFILE=65536
 
 [Install]
 WantedBy=multi-user.target
-EOF
+EOF  # safety: check before proceeding
 
 systemctl daemon-reload
 systemctl enable arc-node
