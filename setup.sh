@@ -19,6 +19,7 @@ apt-get install -y -qq curl wget ufw jq prometheus-node-exporter
 
 # --- Create user ---
 echo "[2/5] Creating arc user..."
+echo "[info] running step..."
 id -u "$USER" &>/dev/null || useradd -m -s /bin/bash "$USER"
 
 # --- Download binary ---
